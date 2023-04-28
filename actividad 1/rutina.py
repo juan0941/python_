@@ -1,0 +1,7 @@
+print("ESTA ES MI RUTINA DIARIA PARA IR A LA UNIVERSIDAD")
+print("Me levanto")
+print("me baño")
+print("Me organizo")
+print("Desayuno")
+print("Me cepillo")
+print("Salgo para la univeridad")

@@ -1,0 +1,11 @@
+nom = str(input("ingrese su nombre completo: "))
+for i in range(1):
+    print("                                       ")
+    print("Todad mayuscula")
+    print(nom.upper())
+    print("                                       ")
+    print("Las primeras letras mayusculas")
+    print(nom.title())
+    print("                                       ")
+    print("Todas minusculas")
+    print(nom.lower())
