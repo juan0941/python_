@@ -4,20 +4,20 @@ class Animales:
         self.raza = raza
         self.años = años
         self.color = color
-        self.levantar = False
-        self.dormir = False
-        self.comer = False
+        self.se_levanto = False
+        self.esta_dormido = False
+        self.esta_comiendo = False
 
     def levantarse(self):
-        self.levantar = True
+        self.se_levanto = True
         print("El perro se desperto")
 
     def comiendo(self):
-        self.comer = True
+        self.esta_comiendo = True
         print("El perro esta comiendo")
 
     def dormido(self):
-        self.dormir = True
+        self.esta_dormido = True
         print("El perro se durmio")
 
 

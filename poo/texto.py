@@ -2,15 +2,15 @@ class Texto:
     def __init__(self, tipo, parrafos):
         self.tipo = tipo
         self.parrafos = parrafos
-        self.nom = False
-        self.aut = False
+        self.titulo_del_texto = False
+        self.autor_del_texto = False
 
     def nombre(self):
-        self.nom = True
+        self.titulo_del_texto = True
         print("El titulo del texto es: Ante la ley")
 
     def autor(self):
-        self.aut = True
+        self.autor_del_texto = True
         print("El autor del tecto es: Franz Kafka")
 
 

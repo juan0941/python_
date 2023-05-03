@@ -2,15 +2,15 @@ class Materias:
     def __init__(self, materia, nota):
         self.materia = materia
         self.nota = nota
-        self.porf = False
-        self.tem = False
+        self.nombre_del_profesor = False
+        self.temas_del_curso = False
 
     def nom_profesor(self):
-        self.porf = True
+        self.nombre_del_profesor = True
         print("El nombre del profesor es: Javier Sanchez")
 
     def temas(self):
-        self.tem = True
+        self.temas_del_curso = True
         print("Los temas que nos dan en la materia son: logica de programacion, ciclos, programacion orientada a objetos ")
 
 
