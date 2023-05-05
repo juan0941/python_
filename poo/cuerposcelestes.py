@@ -1,3 +1,7 @@
+print("EL PLANETA 1")
+print("                                ")
+
+
 class Cuerpo_celeste:
     def __init__(self, planeta, color):
         self.planeta = planeta
@@ -37,3 +41,38 @@ plane.descripcion()
 plane.tamaño()
 plane.radio()
 plane.gravedad()
+# ////////////////////////////////////////////////////////////////////////////
+print("                                ")
+print("EL PLANETA 2")
+print("                                ")
+
+
+class luna(Cuerpo_celeste):
+    def __init__(self, planeta, color, es_habitable):
+        super().__init__(planeta, color)
+        self.es_habitable = es_habitable
+
+    def habitable(self):
+        print(f"El lugar {self.es_habitable}")
+
+
+class tierra(Cuerpo_celeste):
+    def __init__(self, planeta, color, hay_agua):
+        super().__init__(planeta, color)
+        self.hay_agua = hay_agua
+
+    def agua(self):
+        print(f"En este lugar {self.hay_agua}")
+
+
+luna1 = luna("luna", "gris", "no es habitable")
+print("El nombre del planeta es:", luna1.planeta)
+print("El color de este planeta es:", luna1.color)
+luna1.habitable()
+print("                                ")
+print("EL PLANETA 3")
+print("                                ")
+tierra1 = tierra("tierra", "azul y verde", "si hay agua")
+print("El nombre de este planeta es:", tierra1.planeta)
+print("El color del planeta es:", tierra1.color)
+tierra1.agua()

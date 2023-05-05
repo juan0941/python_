@@ -1,3 +1,7 @@
+print("EL PERRO 1")
+print("                                ")
+
+
 class Animals:
     def __init__(self, name, race, years, color):
         self.name = name
@@ -29,3 +33,42 @@ print("El color del perro es:", Animals1.color)
 Animals1.awake()
 Animals1.eat()
 Animals1.asllep()
+# ////////////////////////////////////////////////////////////////////
+print("                                ")
+print("EL GATO")
+print("                                ")
+
+
+class cat(Animals):
+    def __init__(self, name, race, years, color, numbre_leg):
+        super().__init__(name, race, years, color)
+        self.number_leg = numbre_leg
+
+    def leg(self):
+        print(f"El gato tiene {self.number_leg} patas")
+
+
+class dog(Animals):
+    def __init__(self, name, race, years, color, name_owner):
+        super().__init__(name, race, years, color)
+        self.name_owner = name_owner
+
+    def owner(self):
+        print(f"{self.name_owner} es el dueño de", self.name)
+
+
+cat1 = cat("manchas", "persa", "5: años", "blanco y negro", 4)
+print("El gato se llama:", cat1.name)
+print("La raza del gato es:", cat1.race)
+print("El gato tiene,", cat1.years)
+print("El gato es de color:", cat1.color)
+cat1.leg()
+print("                                ")
+print("EL PERRO 2")
+print("                                ")
+dog1 = dog("lucas", "chihuahua", "3: años", "cafe", "Daniel")
+print("El perro se llama:", dog1.name)
+print("La razza del perro es:", dog1.race)
+print("EL perro tiene", dog1.years)
+print("El color del perro es:", dog1.color)
+dog1.owner()
